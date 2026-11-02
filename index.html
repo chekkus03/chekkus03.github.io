@@ -1,17 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <!-- 1. EDIT HERE (Backup redirect) -->
-    <meta http-equiv="refresh" content="0; url=https://chekkus03.github.io/campaign-manager/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBD | Hub</title>
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #161a1f;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #84cc16;
+            --accent-hover: #65a30d;
+            --border-color: #2e3742;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-main);
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+            color: var(--text-main);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #0b0c10;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+    </style>
 </head>
 <body>
-    <script>
-        // 2. EDIT HERE (Main Javascript redirect)
-        window.location.replace("https://chekkus03.github.io/campaign-manager/");
-    </script>
-    <!-- 3. EDIT HERE (Manual link text) -->
-    <p>If you are not redirected automatically, follow this <a href="https://chekkus03.github.io/campaign-manager/">link</a>.</p>
+
+    <main class="grid">
+        <!-- GAME RUNTIME MODULE CARD -->
+        <div class="card">
+            <div>
+                <h2>Normandy Campaign Wargame</h2>
+                <p>Description Coming Soon!.</p>
+            </div>
+            <!-- Points to the subfolder folder name where your actual game repo lives -->
+            <a href="./normandy-campaign-wargame/" class="btn">Go</a>
+        </div>
+    </main>
+
 </body>
 </html>
